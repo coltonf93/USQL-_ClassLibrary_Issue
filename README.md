@@ -7,7 +7,7 @@ When the usql script is ran it throws an error because the class library is unab
 
 I come from a java background and admitidly my understanding of C# and U-SQL is limited. But from the research iv'e done, the nested assembly should be included automatically using these procedures.
 
-[Most useful resource I was able to find](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
+[This is the most useful resource I was able to find](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 
 # Project Setup Instructions
 1. Install visual 2015+ and the data lake/data lake analytics sdk.
