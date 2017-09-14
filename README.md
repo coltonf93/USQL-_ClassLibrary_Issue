@@ -1,11 +1,14 @@
 # Problem Overview
 I am building a custom USQL extractor for parsing WAV files. This level of complexity requires specific third party libraries and I am having trouble referencing them.
 
-Below is a simplified example of the problem I am experiencing. There are two projects (USQL Project and a USQL Class Library). The clas library has third party dependencies that are included when registering the assembly. 
-After registering the class library's assembly, it is referenced in the core U-SQL project. 
+Below is a simplified example of the problem. There are two projects (USQL Project and a USQL Class Library). The class library has third party dependencies that are included when registering the assembly. 
+The class library's assembly is then referenced in the core U-SQL project. 
 When the usql script is ran it throws an error because the class library is unable to find the managed third party dependency. 
 
-I come from a java background and admitidly my understanding of C# and U-SQL is limited. But from what i've been reading online, the nested assembly should be included automatically using these procedures.
+I come from a java background and admitidly my understanding of C# and U-SQL is limited. But from the research iv'e done, the nested assembly should be included automatically using these procedures.
+
+[Most useful resource I was able to find](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
+
 # Project Setup Instructions
 1. Install visual 2015+ and the data lake/data lake analytics sdk.
 2. Clone this project, and open it in visual studio.
@@ -41,3 +44,4 @@ Execution failed with error '1_SV1_Extract Error : '{"diagnosticCode":195887146,
 '
 Execution failed !```
    
+
