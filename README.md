@@ -12,7 +12,7 @@ I come from a java background and admitidly my understanding of C# and U-SQL is 
 # Project Setup Instructions
 1. Install visual 2015+ and the data lake/data lake analytics sdk.
 2. Clone this project, and open it in visual studio.
-3. Copy the *letters.csv* file, to the local mock datalake location (**C:\Users\*[user]*\AppData\Local\USQLDataRoot**).
+3. Copy the *letters.csv* file, to the local mock datalake location (**C:\Users\[user]\AppData\Local\USQLDataRoot**).
 4. Open **Capitalize.usql**, check that the run configurations (to the right of the submit button) show **Local-master-dbo**.
 5. Click Submit to run the usql project, upon success a csv document called **capLetters.csv** will be created in the same directory as the **letters.csv** document from step 3.
 
