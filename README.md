@@ -10,6 +10,7 @@ I come from a java background and admitidly my understanding of C# and U-SQL is 
 [This is the most useful resource I was able to find](https://blogs.msdn.microsoft.com/azuredatalake/2016/08/26/how-to-register-u-sql-assemblies-in-your-u-sql-catalog/)
 
 # Project Setup Instructions
+This project is stable in this state, the issue is introduced in the next section.
 1. Install visual 2015+ and the data lake/data lake analytics sdk.
 2. Clone this project, and open it in visual studio.
 3. Copy the *letters.csv* file, to the local mock datalake location (**C:\Users\\[user]\AppData\Local\USQLDataRoot**).
