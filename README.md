@@ -1,5 +1,5 @@
 # Problem Overview
-I am building a custom USQL extractor for parsing WAV files. This level of complexity requires specific third party libraries and I am having trouble referencing them.
+I am building a custom USQL extractor for parsing Encrytpted WAV files. This level of complexity requires specific third party libraries and I am having trouble referencing them.
 
 Below is a simplified example of the problem. There are two projects (USQL Project and a USQL Class Library). The class library has third party dependencies that are included when registering the assembly. 
 It is also referenced in the core U-SQL project, and U-SQL file itself. 
