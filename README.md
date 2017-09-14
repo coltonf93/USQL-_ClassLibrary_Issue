@@ -19,7 +19,7 @@ This project is stable in this state, the issue is introduced in the next sectio
 
 # Issue Replication Instructions
 Now that we have a working usql project, usql class library and functional custom extractor, we are going to replicate the issue. 
-The objective is to add an assembly that can be referenced by the class library classes.
+The objective is to add an assembly that can be referenced by the **ExampleClassLibrary** project.
 1. In the **ExampleClassLibrary** project right click references and select **Manage NuGet packages**
 2. Under the browse tab search for and install a 3rd party library, (**DotNetZip** is the one I used)
 3. Next open **UpperCaseExtractor.cs** and add a reference to the assembly in the Extract method. (If you used DotNetZip uncomment lines 9 and 31.)
