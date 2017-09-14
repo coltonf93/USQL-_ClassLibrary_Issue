@@ -23,14 +23,14 @@ The objective is to add an assembly that can be referenced by the **ExampleClass
 1. In the **ExampleClassLibrary** project right click references and select **Manage NuGet packages**
 2. Under the browse tab search for and install a 3rd party library, (**DotNetZip** is the one I used)
 3. Next open **UpperCaseExtractor.cs** and add a reference to the assembly in the Extract method. (If you used DotNetZip uncomment lines 9 and 31.)
-4. Register the ExampleClassLibrary by first clicking the **ExampleClassLibrary** project and selecting register assembly.
+4. Right click the **ExampleClassLibrary** project and select register assembly.
 5. Then Check **Replace if assembly already exists**.
 6. Expand **Managed Dependencies** and check the third party library you included.
     
    ![Assembly Registration](https://i.imgur.com/x8xG6Pe.png)
-5. Reference/Update the registered assembly in the **NestedAssemblyCheck** project by right clicking **References -> Add Reference  -> ExampleClassLibrary -> OK**.
-6. Now open **Capitalize.usql** with the same configurations as before and click submit.
-7. Notice the job fails this time and an error is thrown, the key takeaway being `Could not load file or assembly 'DotNetZip'`:
+7. Reference/Update the registered assembly in the **NestedAssemblyCheck** project by right clicking **References -> Add Reference  -> ExampleClassLibrary -> OK**.
+8. Now open **Capitalize.usql** with the same configurations as before and click submit.
+9. Notice the job fails this time and an error is thrown, the key takeaway being `Could not load file or assembly 'DotNetZip'`:
 ```Start : 9/14/2017 2:14:07 PM
 Initialize : 9/14/2017 2:14:07 PM
 GraphParse : 9/14/2017 2:14:07 PM
