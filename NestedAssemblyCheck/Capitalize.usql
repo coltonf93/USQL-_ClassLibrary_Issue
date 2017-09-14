@@ -1,0 +1,7 @@
+﻿/*Reference the class library in the usql so it's methods (extractor) can be used.*/
+REFERENCE ASSEMBLY master.ExampleClassLibrary;
+@data= EXTRACT letter string FROM "letters.csv" USING new ExampleClassLibrary.UpperCaseExtractor(Encoding.UTF8);
+@dataEnriched =
+    SELECT letter
+    FROM @data;
+OUTPUT @dataEnriched TO "capLetters.csv" USING Outputters.Csv();
