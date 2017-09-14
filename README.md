@@ -2,8 +2,8 @@
 I am building a custom USQL extractor for parsing WAV files. This level of complexity requires specific third party libraries and I am having trouble referencing them.
 
 Below is a simplified example of the problem. There are two projects (USQL Project and a USQL Class Library). The class library has third party dependencies that are included when registering the assembly. 
-The class library's assembly is then referenced in the core U-SQL project. 
-When the usql script is ran it throws an error because the class library is unable to find the managed third party dependency. 
+It is also referenced in the core U-SQL project, and U-SQL file itself. 
+When the U-SQL script is ran it throws an error because the class library is unable to find the managed third party dependency. 
 
 I come from a java background and admitidly my understanding of C# and U-SQL is limited. But from the research iv'e done, the nested assembly should be included automatically using these procedures.
 
